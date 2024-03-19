@@ -3,4 +3,7 @@
 2. Preparatory: The software combo I chose is Ubuntu Windows (Linux-based) for submitting jobs, and Bitverse SSH Client for uploading folders/files to the cloud.
 3. Log onto the cloud via Bitverse SSH Client first
 4. Job submission
-   - In Ubuntu, run command `ssh -X -l huaning3 cc-login.campuscluster.illinois.edu`.
+   - In Ubuntu, run command `ssh -X -l <username> cc-login.campuscluster.illinois.edu` to log into the cluster, password is needed then.
+   - At this time, you'll see that neither `conda` nor `python` works, so we'll need to first "import" conda, then create an conda environment that adapts our codes.
+     a. module load anaconda/3
+     b. 
