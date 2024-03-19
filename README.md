@@ -13,5 +13,5 @@
    - After the job execution, you will see an output file in your directory, namely `job.out`. To really see the result/output, running `cat job.out` would let you view it in the terminal.
 
 References:
-1. I followed UIUC official cluster tutorial to do most of the work, this documentation was a simplified/direct version. https://docs.ncsa.illinois.edu/systems/icc/en/latest/getting_started.html
+1. I followed UIUC official cluster tutorial to do most of the work, my personal documentation was a simplified/direct version. https://docs.ncsa.illinois.edu/systems/icc/en/latest/getting_started.html
 2. For linux-based operations, I personally followed Joe's instruction https://ucsd-cse15l-s23.github.io/. This a super useful light-unit course from UC San Diego.
