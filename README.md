@@ -3,4 +3,4 @@
 2. Preparatory: The software combo I chose is Ubuntu Windows (Linux-based) for submitting jobs, and Bitverse SSH Client for uploading folders/files to the cloud.
 3. Log onto the cloud via Bitverse SSH Client first
 4. Job submission
-   - In Ubuntu, run command
+   - In Ubuntu, run command `ssh -X -l huaning3 cc-login.campuscluster.illinois.edu`.
