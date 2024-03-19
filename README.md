@@ -4,6 +4,7 @@
 3. Log onto the cloud via Bitverse SSH Client first, upload all files you want to run together with `req.yml` to the cluster. <img src="g2.png" width="500" height="300">
 4. Job submission
    - In Ubuntu, run command `ssh -X -l <username> cc-login.campuscluster.illinois.edu` to log into the cluster, password is needed then.
+   <img src="g1.png" width="500" height="300">
    - At this time, you'll see that neither `conda` nor `python` works, so we'll need to first "import" conda, then create an conda environment that adapts our codes.
      (1). run `module load anaconda/3` to acitvate anaconda
      (2). run `conda create --name <environment name> --file req.yml` to create a conda environment, this may take a while to run. And note that this is one-time operation: after you created the environment, you could skip this step for further loggin's.
