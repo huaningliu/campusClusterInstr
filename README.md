@@ -10,5 +10,8 @@
      (3). run `source activate <environment name>` to activate the environment
    - It's time to use slurm to submit the file to the cluster. `cd` into the path that contains the `job.slurm` file first, then run `sbatch job.slurm`. To edit the file, one could simply do `vim job.slurm`, type `i` to enter insert mode, then edit it as he/she wished. After finished, press `:wq`+`enter` to exit the vim.
    - A successful job submission outputs `Submitted batch job 10671608`. To moniter the job, one could do `scontrol show job 10671608`. Note the number here is just an example. But unfortunately, `squeue -u <username>` wouldn't work for now since we are yet to have an account of the cluster.
+   - After the job execution, you will see an output file in your directory, namely `job.out`. To really see the result/output, running `cat job.out` would let you view it in the terminal.
 
-Reference: https://docs.ncsa.illinois.edu/systems/icc/en/latest/getting_started.html
+References:
+1. I followed UIUC official cluster tutorial to do most of the work, this documentation was a simplified/direct version. https://docs.ncsa.illinois.edu/systems/icc/en/latest/getting_started.html
+2. For linux-based operations, I personally followed Joe's instruction https://ucsd-cse15l-s23.github.io/. This a super useful light-unit course from UC San Diego.
