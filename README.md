@@ -6,7 +6,7 @@
    - In Ubuntu, run command `ssh -X -l <username> cc-login.campuscluster.illinois.edu` to log into the cluster, password is needed then.
    - At this time, you'll see that neither `conda` nor `python` works, so we'll need to first "import" conda, then create an conda environment that adapts our codes.
      (1). run `module load anaconda/3` to acitvate anaconda
-     (2). run `conda create --name <environment name> --file req.yml` to create a conda environment, this may take a while to run
+     (2). run `conda create --name <environment name> --file req.yml` to create a conda environment, this may take a while to run. And note that this is one-time operation: after you created the environment, you could skip this step for further loggin's.
      (3). run `source activate <environment name>` to activate the environment
    - It's time to use slurm to submit the file to the cluster. `cd` into the path that contains the `job.slurm` file first, then run `sbatch job.slurm`. To edit the file, one could simply do `vim job.slurm`, type `i` to enter insert mode, then edit it as he/she wished. After finished, press `:wq`+`enter` to exit the vim.
    - A successful job submission outputs `Submitted batch job 10671608`. To moniter the job, one could do `scontrol show job 10671608`. Note the number here is just an example. But unfortunately, `squeue -u <username>` wouldn't work for now since we are yet to have an account of the cluster.
