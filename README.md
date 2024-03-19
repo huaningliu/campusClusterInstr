@@ -5,5 +5,5 @@
 4. Job submission
    - In Ubuntu, run command `ssh -X -l <username> cc-login.campuscluster.illinois.edu` to log into the cluster, password is needed then.
    - At this time, you'll see that neither `conda` nor `python` works, so we'll need to first "import" conda, then create an conda environment that adapts our codes.
-     a. module load anaconda/3
-     b. 
+     (1). run `module load anaconda/3`
+     (2). 
